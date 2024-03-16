@@ -532,8 +532,7 @@ def rgbd_slam(config: dict):
     )
     num_frames = dataset_config["num_frames"]
     if num_frames == -1:
-        # num_frames = len(dataset)
-        num_frames = 10
+        num_frames = len(dataset)
         print(f"Setting num_frames to {num_frames}")
     # return
     # Init seperate dataloader for densification if required
